@@ -1,0 +1,314 @@
+
+header{
+  position:fixed;
+  top: 0;
+  width:100%;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+div.headerContainer{
+
+}
+
+
+div.wrapper{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  position:fixed;
+  background-color: black;
+  color: white;
+  height: 75px;
+}
+
+
+div.headerButtons{
+	margin-left: auto;
+  margin-right: 10%;
+}
+
+div.myLogo{
+  width: 20%;
+  justify-content: center;
+  display: flex;
+}
+
+button.buttonLayout{
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 15px;
+}
+
+button.buttonLayout:hover
+{
+  background-color: orange;
+}
+
+
+div.rightFooter
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+div.leftFooter
+{
+  display: flex;
+  flex-direction: row;
+
+  margin-left: auto;
+  padding-right: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+li + li::before {
+  content: " · ";
+}
+
+div.textContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+
+
+a.footerLinks{
+  text-align: center;
+  vertical-align: middle;
+  display: inline;
+  color: orange;
+}
+
+p.footerText{
+  text-align: center;
+  vertical-align: middle;
+  display: inline;
+}
+
+div.articleText{
+  background-color: #cccccc;
+  padding: 100px 50px 100px 25px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+div.pageStarter{
+  display: flex;
+  flex-direction: row;
+  padding: 0px 15% 0px 15%;
+  position: relative;
+}
+
+div.imageStarter{
+  	margin-left: auto;
+}
+
+
+div.imageAndTitle{
+  display: flex;
+  flex-direction: row;
+}
+
+.penContainer img {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+
+}
+
+.penContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.titleAndDesc{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 25%;
+}
+
+div.listing{
+  display: flex;
+  flex-direction: row;
+}
+
+
+div.imageContainer{
+  filter: grayscale(100%);
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: baseline;
+  width: 100%;
+}
+
+div.listingContainer{
+  background-color: #e6e6e6;
+  min-width: : calc(33%-10px);
+  width: 33%;
+  margin: 25px;
+  padding: 10px;
+
+}
+
+p.numberColor
+{
+  color: orange;
+}
+
+p.title {
+  font-weight: bold;
+  font-weight: 900;
+}
+
+div.detailContainer{
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+}
+
+div.centerText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 25%;
+  margin: 25px auto;
+}
+
+div.contactContainer{
+  display: flex;
+  background-color: orange;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin : 20px 10% 15px 10%;
+}
+
+div.contactContainer button
+{
+  background-color: #ffeb99;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+div.verticalLine
+{
+    border-left: 3px solid black;
+}
+
+div.contactText
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+div.textOverImage
+{
+  background-color: black;
+  color: white;
+  width: 15%;
+  height: 40%;
+  position: absolute;
+  bottom: -20px;
+  padding: 10px;
+}
+
+p.styleForText
+{
+  font: 50px Arial, sans-serif;
+  color : grey;
+  line-height: 0;
+}
+
+div.textFiller
+{
+  width: 80%;
+}
+
+div.containerList
+{
+  padding: 30px 60px 30px 60px;
+}
+
+div.containerDetails
+{
+    padding: 30px 60px 30px 60px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  img{
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  div.pageStarter
+  {
+    flex-wrap: wrap;
+  }
+
+  div.listing
+  {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  div.detailContainer
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  div.imageContainer
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  div.verticalLine
+  {
+    display: none;
+  }
+  div.contactContainer
+  {
+    flex-direction: column;
+  }
+
+}
